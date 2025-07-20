@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /* 
+            Medidas absolutas: 
+                cm, mm, in(polegada), px, pt(ponto), pc(paica)
+
+            Medidas relativas:
+                em (relativa a altura da letra m da fonte)
+                ex (relativa a altura da letra x da fonte)
+                rem (relativa a altura da fonte que esta configurada no body/*)
+                vw (largura da viewport: largura da tela)
+                vh (altura da viewport: altura da tela)
+                % (porcentagem)
+                obs: 16px geralmente = 1em
+            
+            Nota: Recomendação do W3C utilizar somente px ou em
+            */
+            font-size: 1em;
+        }
+
+        h1 {
+            font: italic bolder 3em 'Cascadia Code';
+
+            /* shorthand font ordem:
+                - font-style
+                - font-weight
+                - font-size
+                - font-family
+            */
+        }
+
+        h2 {
+            font: bold 2em 'Cascadia Code';
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora enim molestias omnis distinctio, optio possimus
+        reprehenderit eligendi consequatur nesciunt, fugiat voluptatibus iste quas maxime rerum sapiente necessitatibus.
+        Odio, recusandae excepturi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut ullam id praesentium
+        itaque, error dolorem qui laboriosam, odio nisi repudiandae mollitia dignissimos quae perspiciatis possimus
+        ducimus doloribus sapiente iusto sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, illum
+        molestias neque, porro atque architecto ab blanditiis quod corporis ratione, voluptate tenetur. Iusto corporis
+        nemo officia qui eveniet totam corrupti.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga perferendis, suscipit incidunt dicta animi maiores
+        repellendus qui facilis ad quo? Veritatis, dignissimos amet omnis ad libero tenetur? Magnam, nam saepe.</p>
+
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia autem natus dignissimos laborum. Vero similique
+        quae quaerat odit labore, incidunt enim vitae natus reprehenderit perferendis, laboriosam est asperiores eum
+        sed?</p>
+</body>
+
+</html>
