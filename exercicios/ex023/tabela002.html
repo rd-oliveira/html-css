@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        thead>tr>th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        /*
+        odd ou 2n-1 = ímpar
+        even ou 2n = par 
+        */
+        tbody>tr:nth-child(odd) {
+            background-color: lightgray;
+            font-weight: bold;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead,
+        tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- 
+    Anatomia para tabelas grandes:
+
+    TABLE
+        CAPTION
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>88.256.631</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nesciunt, aperiam magni ab nihil ratione dolores
+        expedita. Eaque laboriosam veniam provident repudiandae sint eos distinctio at quidem deleniti? Necessitatibus,
+        quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate vel possimus unde iure culpa officia
+        sint vero architecto explicabo obcaecati at eveniet, modi inventore esse dolorem. Minima adipisci blanditiis
+        aliquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, error minus quo, cupiditate ut
+        inventore molestiae illum vel nesciunt ipsum, repudiandae ipsam facilis exercitationem nihil placeat vero
+        necessitatibus? Esse, odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ut repellat
+        voluptatibus et temporibus consequuntur expedita impedit. Molestias adipisci provident libero iste quae, dolore
+        aspernatur alias atque optio odit. Adipisci?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nesciunt, aperiam magni ab nihil ratione dolores
+        expedita. Eaque laboriosam veniam provident repudiandae sint eos distinctio at quidem deleniti? Necessitatibus,
+        quo.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate vel possimus unde iure culpa officia sint
+        vero
+        architecto explicabo obcaecati at eveniet, modi inventore esse dolorem. Minima adipisci blanditiis aliquam?
+        Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Velit, error minus quo, cupiditate ut inventore molestiae
+        illum
+        vel nesciunt ipsum, repudiandae ipsam facilis exercitationem nihil placeat vero necessitatibus? Esse, odit?
+        Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Facere, ut repellat voluptatibus et temporibus consequuntur
+        expedita impedit. Molestias adipisci provident libero iste quae, dolore aspernatur alias atque optio odit.
+        Adipisci?
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nesciunt, aperiam magni ab nihil ratione dolores
+        expedita. Eaque laboriosam veniam provident repudiandae sint eos distinctio at quidem deleniti? Necessitatibus,
+        quo.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate vel possimus unde iure culpa officia sint
+        vero
+        architecto explicabo obcaecati at eveniet, modi inventore esse dolorem. Minima adipisci blanditiis aliquam?
+        Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Velit, error minus quo, cupiditate ut inventore molestiae
+        illum
+        vel nesciunt ipsum, repudiandae ipsam facilis exercitationem nihil placeat vero necessitatibus? Esse, odit?
+        Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Facere, ut repellat voluptatibus et temporibus consequuntur
+        expedita impedit. Molestias adipisci provident libero iste quae, dolore aspernatur alias atque optio odit.
+        Adipisci?
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nesciunt, aperiam magni ab nihil ratione dolores
+        expedita. Eaque laboriosam veniam provident repudiandae sint eos distinctio at quidem deleniti? Necessitatibus,
+        quo.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate vel possimus unde iure culpa officia sint
+        vero
+        architecto explicabo obcaecati at eveniet, modi inventore esse dolorem. Minima adipisci blanditiis aliquam?
+        Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Velit, error minus quo, cupiditate ut inventore molestiae
+        illum
+        vel nesciunt ipsum, repudiandae ipsam facilis exercitationem nihil placeat vero necessitatibus? Esse, odit?
+        Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Facere, ut repellat voluptatibus et temporibus consequuntur
+        expedita impedit. Molestias adipisci provident libero iste quae, dolore aspernatur alias atque optio odit.
+        Adipisci?
+    </p>
+</body>
+
+</html>
