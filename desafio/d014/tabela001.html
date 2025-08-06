@@ -5,10 +5,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            background-color: lightgray;
+            padding: 10px;
+            font-variant: small-caps;
+            font-weight: bold;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead tr>th {
+            background-color: rgb(146, 145, 145);
+            color: white;
+        }
+
+        .dados-personalizados {
+            text-align: center;
+        }
+
+        .titulo-personalizado {
+            text-align: left;
+            background-color: rgb(146, 145, 145);
+            color: white;
+            font-weight: bold;
+        }
+
+        .titulo-personalizado>td {
+            text-align: center;
+        }
+
+        tfoot {
+            text-align: center;
+            color: rgb(228, 96, 96);
+            font-variant: small-caps;
+        }
+    </style>
 </head>
 
 <body>
-
+    <table>
+        <caption>Desempenho Acadêmico por Área de Conhecimento</caption>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col">Áreas</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
+            </tr>
+            <tr>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                <td>Matemática</td>
+                <td class="dados-personalizados">0.0</td>
+                <td class="dados-personalizados">0.0</td>
+                <td class="dados-personalizados">0.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td class="dados-personalizados">0.0</td>
+                <td class="dados-personalizados">0.0</td>
+                <td class="dados-personalizados">0.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td class="dados-personalizados">0.0</td>
+                <td class="dados-personalizados">0.0</td>
+                <td class="dados-personalizados">0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td class="dados-personalizados">0.0</td>
+                <td class="dados-personalizados">0.0</td>
+                <td class="dados-personalizados">0.0</td>
+            </tr>
+            <tr class="titulo-personalizado">
+                <th colspan="4" scope="row">Média de Exatas</th>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td>História</td>
+                <td class="dados-personalizados">0.0</td>
+                <td class="dados-personalizados">0.0</td>
+                <td class="dados-personalizados">0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td class="dados-personalizados">0.0</td>
+                <td class="dados-personalizados">0.0</td>
+                <td class="dados-personalizados">0.0</td>
+            </tr>
+            <tr class="titulo-personalizado">
+                <th colspan="4" scope="row">Média de Humanas</th>
+                <td>0.0</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Média Geral</th>
+                <td>0.0</td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 
 </html>
