@@ -1,2 +1,7 @@
 @charset "UTF-8";
 /* Dispositivo em modo portrait(em pé) */
+
+body {
+    background-image: url('../images/cev-portrait.jpg');
+    background-position: center bottom;
+}
