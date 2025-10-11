@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias */
+/* typical device breakpoints:
+
+pequenas telas: até 600px
+celular: 600px até 768px
+tablet: 768px até 992px
+desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+/* impressora */
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url('../images/back-print.jpg');
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main h1 {
+        color: black;
+        text-shadow: none;
+    }
+
+    main::after {
+        content: "Essa impressão foi feita através do site www.cursoemvideo.com";
+        text-decoration: overline;
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #tablet {
+        display: none;
+    }
+
+    #print {
+        display: block;
+    }
+
+    #pc {
+        display: none;
+    }
+
+    #tv {
+        display: none;
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width:992px) {
+    body {
+        background-image: url('../images/back-tablet.jpg');
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #tablet {
+        display: block;
+    }
+
+    #print {
+        display: none;
+    }
+
+    #pc {
+        display: none;
+    }
+
+    #tv {
+        display: none;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 992px) and (max-width:1200px) {
+    body {
+        background-image: url('../images/back-pc.jpg');
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #tablet {
+        display: none;
+    }
+
+    #print {
+        display: none;
+    }
+
+    #pc {
+        display: block;
+    }
+
+    #tv {
+        display: none;
+    }
+}
+
+
+/* grandes telas */
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url('../images/back-tv.jpg');
+    }
+
+    main {
+        width: 700px;
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #tablet {
+        display: none;
+    }
+
+    #print {
+        display: none;
+    }
+
+    #pc {
+        display: none;
+    }
+
+    #tv {
+        display: block;
+    }
+}
